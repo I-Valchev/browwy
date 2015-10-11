@@ -12,3 +12,8 @@
   
 ## It's yours
   Browwy is totally motivated and would enjoy to be developed! Just clone the repository, write your additions and send a pull request! There we go, you just helped Browwy to improve!!
+
+# How to install
+  Locate the terminal to installdir/ <br />
+  Run `sudo make` or `sudo make -f Makefile` <br />
+  That's it! Time to enjoy Browwy!
