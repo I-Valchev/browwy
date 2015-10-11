@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.1
+Type=Application
+Name=Browwy
+Comment=Browwy web browser
+Exec=java -jar /usr/share/browwy/Browwy.jar
+Icon=/usr/share/browwy/logo-big.png
+Terminal=false
+StartupNotify=true 
+StartupWMClass=snowglobe-do-not-run-directly
+Categories=Game
+

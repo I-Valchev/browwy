@@ -1,5 +1,6 @@
 package main;
 
+import java.io.InputStream;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.events.KeyEvent;
@@ -37,8 +38,8 @@ public class Window {
 		shell = new Shell();
 		shell.setText("Browwy");
 		shell.setLayout(new GridLayout(GRID_NUM, true));
-		
-		Image logoIcon = new Image(display, "resources/logo-big.png");
+		InputStream imgStream = this.getClass().getResourceAsStream("/main/logo-big.png");
+		Image logoIcon = new Image(display, imgStream);
 		shell.setImage(logoIcon);
 		this.grid = new GridData(SWT.FILL, SWT.BEGINNING, true, false);
 		localBrowser = new localBrowser(this);
@@ -96,7 +97,8 @@ public class Window {
 		grid.horizontalSpan = SETTINGS_BUTTON_SPAN;
 		settingsButton.setLayoutData(grid);
 		settingsButton.addSelectionListener(settingsButtonListener);
-		Image settingsImg = new Image(display, "resources/settings-icon.png");
+		InputStream imgStream = this.getClass().getResourceAsStream("/main/settings-icon.png");
+		Image settingsImg = new Image(display, imgStream);
 		settingsButton.setImage(settingsImg);
 		
 		settingsMenu = new Menu(settingsButton);
