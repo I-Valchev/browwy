@@ -38,7 +38,7 @@ public class Window {
 		shell.setText("Browwy");
 		shell.setLayout(new GridLayout(GRID_NUM, true));
 		
-		Image logoIcon = new Image(display, "logo-big.png");
+		Image logoIcon = new Image(display, "resources/logo-big.png");
 		shell.setImage(logoIcon);
 		this.grid = new GridData(SWT.FILL, SWT.BEGINNING, true, false);
 		localBrowser = new localBrowser(this);
@@ -96,7 +96,7 @@ public class Window {
 		grid.horizontalSpan = SETTINGS_BUTTON_SPAN;
 		settingsButton.setLayoutData(grid);
 		settingsButton.addSelectionListener(settingsButtonListener);
-		Image settingsImg = new Image(display, "settings-icon.png");
+		Image settingsImg = new Image(display, "resources/settings-icon.png");
 		settingsButton.setImage(settingsImg);
 		
 		settingsMenu = new Menu(settingsButton);
